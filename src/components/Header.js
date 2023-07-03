@@ -1,46 +1,81 @@
-import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { Nav, NavItem } from 'reactstrap';
+import { NavHashLink } from 'react-router-hash-link';
 
 const Header = () => {
 	return (
-		<div>
-			<Navbar color='secondary' sticky='top' dark>
-				<NavbarBrand>David Ogden III</NavbarBrand>
-				<Nav>
-					<NavItem>
-						<NavLink style={{ color: 'white' }}>About Me</NavLink>
-					</NavItem>
-					<NavItem>
-						<NavLink style={{ color: 'white' }}>Skills</NavLink>
-					</NavItem>
-					<NavItem>
-						<NavLink style={{ color: 'white' }}>Education</NavLink>
-					</NavItem>
-					<NavItem>
-						<NavLink style={{ color: 'white' }}>Projects</NavLink>
-					</NavItem>
-					<NavItem>
-						<NavLink style={{ color: 'white' }}>Contact</NavLink>
-					</NavItem>
-				</Nav>
-				<Nav>
-					<NavItem>
-						<NavLink
-							style={{ color: 'white' }}
-							href='https://www.linkedin.com/in/david-o-5a601224a/'>
-							<FaLinkedin />
-						</NavLink>
-					</NavItem>
-					<NavItem>
-						<NavLink
-							style={{ color: 'white' }}
-							href='https://github.com/David-Ogden-III'>
-							<FaGithub />
-						</NavLink>
-					</NavItem>
-				</Nav>
-			</Navbar>
-		</div>
+		<Nav
+			horizontal='center'
+			style={{
+				backgroundColor: 'white',
+				position: 'sticky',
+				top: 0,
+			}}>
+			<NavItem>
+				<NavHashLink
+					smooth
+					to='#home'
+					style={{
+						color: 'black',
+						textDecoration: 'none',
+						marginInline: 8,
+						fontSize: 24,
+					}}>
+					Home
+				</NavHashLink>
+			</NavItem>
+			<NavItem>
+				<NavHashLink
+					smooth
+					to='#about'
+					style={{
+						color: 'black',
+						textDecoration: 'none',
+						marginInline: 8,
+						fontSize: 24,
+					}}>
+					About Me
+				</NavHashLink>
+			</NavItem>
+			<NavItem>
+				<NavHashLink
+					smooth
+					to='#skills'
+					style={{
+						color: 'black',
+						textDecoration: 'none',
+						marginInline: 8,
+						fontSize: 24,
+					}}>
+					Skills
+				</NavHashLink>
+			</NavItem>
+			<NavItem>
+				<NavHashLink
+					smooth
+					to='#projects'
+					style={{
+						color: 'black',
+						textDecoration: 'none',
+						marginInline: 8,
+						fontSize: 24,
+					}}>
+					Projects
+				</NavHashLink>
+			</NavItem>
+			<NavItem>
+				<NavHashLink
+					smooth
+					to='#social'
+					style={{
+						color: 'black',
+						textDecoration: 'none',
+						marginInline: 8,
+						fontSize: 24,
+					}}>
+					Social
+				</NavHashLink>
+			</NavItem>
+		</Nav>
 	);
 };
 export default Header;

@@ -6,19 +6,13 @@ import AboutComp from './components/AboutComp';
 import SkillsComp from './components/SkillsComp';
 import ProjectsComp from './components/ProjectsComp';
 import SocialComp from './components/SocialComp';
-import useScrollSnap from 'react-use-scroll-snap';
-import { useRef } from 'react';
 
 function App() {
-	const scrollRef = useRef(null);
-	useScrollSnap({ ref: scrollRef, duration: 250, delay: 50 });
-
 	return (
 		<BrowserRouter>
 			<div
 				style={{ backgroundColor: '#F6EEEA' }}
-				className='snap-mandatory snap-y scroll-smooth h-screen overflow-auto'
-				ref={scrollRef}>
+				className='snap-mandatory snap-y scroll-smooth h-screen overflow-auto'>
 				<Header />
 				<HomeComp />
 				<AboutComp />

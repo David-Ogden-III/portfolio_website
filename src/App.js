@@ -16,6 +16,7 @@ function App() {
 	return (
 		<BrowserRouter>
 			<div
+				style={{ backgroundColor: '#F6EEEA' }}
 				className='snap-mandatory snap-y scroll-smooth h-screen overflow-auto'
 				ref={scrollRef}>
 				<Header />

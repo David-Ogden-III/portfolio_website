@@ -1,9 +1,9 @@
-import familyPhoto from '../familyPhotoPng.png';
+import familyPhoto from '../images/familyPhotoPng.png';
 
 const AboutComp = () => {
 	return (
 		<div
-			className='snap-start bg-white w-screen h-screen flex items-center justify-center px-6 sm:px-12 lg:px-20'
+			className='snap-center bg-white w-screen h-screen flex items-center justify-center px-6 sm:px-12 lg:px-20'
 			id='about'>
 			<section className='w-full xl:container mx-auto'>
 				<div className='lg:flex lg:space-x-10'>
@@ -16,6 +16,9 @@ const AboutComp = () => {
 					</div>
 					<div className='flex items-center w-full lg:w-1/2'>
 						<div className='max-w-[700px] mx-auto'>
+							<h4 className='text-base sm:text-lg text-center xl:text-xl font-raleway font-semibold mt-2 md:mt-4 !leading-relaxed xl:w-2/3 '>
+								About Me
+							</h4>
 							<p className='text-sm sm:text-base text-justify xl:text-lg font-raleway font-normal mt-2 md:mt-4 !leading-relaxed xl:w-2/3 '>
 								I am a passionate and skilled Software Developer specializing in
 								**Mobile and Web development** with a strong dedication to

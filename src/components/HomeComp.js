@@ -1,10 +1,10 @@
 const HomeComp = () => {
 	return (
 		<div
-			className='snap-start bg-white w-screen h-screen flex  items-center justify-center px-6 sm:px-12 lg:px-20'
+			className='snap-start w-screen h-screen flex  items-center justify-center px-6 sm:px-12 lg:px-20'
 			id='home'>
 			<div
-				className='snap-start bg-white h-screen w-full flex items-center justify-center'
+				className='snap-start h-screen w-full flex items-center justify-center'
 				id='home'>
 				<div>
 					<div className='flex justify-center' style={{ transform: 'none' }}>
@@ -16,7 +16,7 @@ const HomeComp = () => {
 
 					<div className='flex flex-col justify-center items-center'>
 						<h6 className='text-base sm:text-xl'>Hello, I'm</h6>
-						<h1 className='text-5xl xs:text-6xl sm:text-7xl md:text-8xl lg:text-10xl xl:text-[120px] xl:leading-[120px]'>
+						<h1 className='text-5xl xs:text-6xl sm:text-7xl md:text-8xl lg:text-10xl xl:text-[120px] xl:leading-[120px] font-marker'>
 							David
 							<br />
 							<span className='sm:ml-16 -mt-36'>Ogden</span>

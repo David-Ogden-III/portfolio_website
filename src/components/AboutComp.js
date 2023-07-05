@@ -16,10 +16,10 @@ const AboutComp = () => {
 					</div>
 					<div className='flex items-center w-full lg:w-1/2'>
 						<div className='max-w-[700px] mx-auto'>
-							<h4 className='text-base sm:text-lg text-center xl:text-xl font-raleway font-semibold mt-2 md:mt-4 !leading-relaxed xl:w-2/3 '>
+							<h4 className='text-base sm:text-lg text-center xl:text-xl mt-2 md:mt-4 !leading-relaxed xl:w-2/3  font-ubuntu500'>
 								About Me
 							</h4>
-							<p className='text-sm sm:text-base text-justify xl:text-lg font-raleway font-normal mt-2 md:mt-4 !leading-relaxed xl:w-2/3 '>
+							<p className='text-sm sm:text-base text-justify xl:text-lg mt-2 md:mt-4 !leading-relaxed xl:w-2/3 font-ubuntu400'>
 								I am a passionate and skilled Software Developer specializing in
 								**Mobile and Web development** with a strong dedication to
 								quality and **attention to detail**. I am constantly seeking new

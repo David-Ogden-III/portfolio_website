@@ -5,3 +5,22 @@
 .font-marker {
     font-family: 'Permanent Marker', cursive; 
 }
+
+.font-belan {
+    font-family: 'Belanosima', sans-serif;
+}
+
+.font-ubuntu300 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+.font-ubuntu400 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.font-ubuntu500 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}

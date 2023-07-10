@@ -3,7 +3,7 @@ import familyPhoto from '../images/familyPhotoPng.png';
 const AboutComp = () => {
 	return (
 		<div
-			className='snap-center bg-white w-screen h-screen flex items-center justify-center px-6 sm:px-12 lg:px-20'
+			className='snap-center bg-white w-full h-screen flex items-center justify-center px-6 sm:px-12 lg:px-20'
 			id='about'>
 			<section className='w-full xl:container mx-auto'>
 				<div className='lg:flex lg:space-x-10'>

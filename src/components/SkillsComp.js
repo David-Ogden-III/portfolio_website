@@ -7,7 +7,7 @@ const SkillsComp = () => {
 	return (
 		<div
 			id='skills'
-			className='snap-center w-screen h-screen flex items-center justify-center px-6 sm:px-12 lg:px-20'>
+			className='snap-center w-full h-screen flex items-center justify-center px-6 sm:px-12 lg:px-20'>
 			<div className='flex flex-col justify-center items-center'>
 				<div>
 					<h4>Skills</h4>

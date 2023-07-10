@@ -1,7 +1,7 @@
 const HomeComp = () => {
 	return (
 		<div
-			className='snap-start w-screen h-screen flex  items-center justify-center px-6 sm:px-12 lg:px-20'
+			className='snap-start w-full h-screen flex  items-center justify-center px-6 sm:px-12 lg:px-20'
 			id='home'>
 			<div>
 				<div className='flex justify-center' style={{ transform: 'none' }}>

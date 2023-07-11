@@ -1,5 +1,14 @@
 import { useState } from 'react';
 import { Button } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+	faReact,
+	faHtml5,
+	faCss3Alt,
+	faBootstrap,
+	faJs,
+	faNodeJs,
+} from '@fortawesome/free-brands-svg-icons';
 
 const SkillsComp = () => {
 	const [skills, setSkills] = useState(true);
@@ -45,27 +54,45 @@ const SkillsComp = () => {
 					{skills ? (
 						<>
 							<div className='flex flex-row items-center justify-center'>
-								<div className='w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 border-2 border-black bg-white rounded-lg m-3'></div>
-								<div className='w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 border-2 border-black bg-white rounded-lg m-3'></div>
-								<div className='w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 border-2 border-black bg-white rounded-lg m-3'></div>
+								<div className='flex items-center justify-center text-[#e34c26] w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+									<FontAwesomeIcon icon={faHtml5} className='w-full h-full' />
+								</div>
+								<div className='flex items-center justify-center text-[#264de4] w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+									<FontAwesomeIcon icon={faCss3Alt} className='w-full h-full' />
+								</div>
+								<div className='flex items-center justify-center text-[#f0db4f] w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+									<FontAwesomeIcon
+										icon={faJs}
+										className='w-full h-full bg-black'
+									/>
+								</div>
 							</div>
 							<div className='flex flex-row items-center justify-center'>
-								<div className='w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 border-2 border-black bg-white rounded-lg m-3'></div>
-								<div className='w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 border-2 border-black bg-white rounded-lg m-3'></div>
-								<div className='w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 border-2 border-black bg-white rounded-lg m-3'></div>
+								<div className='flex items-center justify-center text-[#6f42c1] w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+									<FontAwesomeIcon
+										icon={faBootstrap}
+										className='w-full h-full'
+									/>
+								</div>
+								<div className='flex items-center justify-center text-[#61DBFB] w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+									<FontAwesomeIcon icon={faReact} className='w-full h-full' />
+								</div>
+								<div className='flex items-center justify-center text-[#68a063] w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+									<FontAwesomeIcon icon={faNodeJs} className='w-full h-full' />
+								</div>
 							</div>
 						</>
 					) : (
 						<>
 							<div className='flex flex-row items-center justify-center'>
-								<div className='w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 border-2 border-black bg-white rounded-lg m-3'></div>
-								<div className='w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 border-2 border-black bg-white rounded-lg m-3'></div>
-								<div className='w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 border-2 border-black bg-white rounded-lg m-3'></div>
+								<div className='flex items-center justify-center w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'></div>
+								<div className='flex items-center justify-center w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'></div>
+								<div className='flex items-center justify-center w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'></div>
 							</div>
 							<div className='flex flex-row items-center justify-center'>
-								<div className='w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 border-2 border-black bg-white rounded-lg m-3'></div>
-								<div className='w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 border-2 border-black bg-white rounded-lg m-3'></div>
-								<div className='w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 border-2 border-black bg-white rounded-lg m-3'></div>
+								<div className='flex items-center justify-center w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'></div>
+								<div className='flex items-center justify-center w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'></div>
+								<div className='flex items-center justify-center w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'></div>
 							</div>
 						</>
 					)}

@@ -1,3 +1,5 @@
+import selfPortrait from '../images/familyPhoto.png';
+
 const HomeComp = () => {
 	return (
 		<div
@@ -5,10 +7,7 @@ const HomeComp = () => {
 			id='home'>
 			<div>
 				<div className='flex justify-center' style={{ transform: 'none' }}>
-					<img
-						className='xs:w-[220px] sm:w-[45%] md:w-[35%] lg:w=[26%] xl:w-[22%]'
-						alt='no pic yet'
-					/>
+					<img src={selfPortrait} alt='no pic yet' className='w-1/2' />
 				</div>
 
 				<div className='flex flex-col justify-center items-center'>

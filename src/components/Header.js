@@ -18,8 +18,8 @@ const Header = () => {
 	const [socialOpen, setSocialOpen] = useState(false);
 
 	return (
-		<div className='hidden sm:flex w-full absolute sticky top-0 left-0 flex items-center justify-between sm:justify-center px-8 sm:px-8 lg:px-20 z-40'>
-			<ul className='flex items-center justify-between bg-white rounded-b-lg'>
+		<div className='hidden sm:flex w-full sticky top-0 flex items-center justify-center px-8 sm:px-8 lg:px-20 z-40'>
+			<ul className='flex justify-between items-center bg-white rounded-b-lg'>
 				<li
 					className='px-3 sm:px-4 md:px-5 rounded-lg py-3.5 items-center'
 					style={{ opacity: 1, transform: 'none' }}

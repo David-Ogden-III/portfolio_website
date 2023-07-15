@@ -9,6 +9,9 @@ import {
 	faJs,
 	faNodeJs,
 } from '@fortawesome/free-brands-svg-icons';
+import reduxLogo from '../images/redux-logo-svgrepo-com.svg';
+import mongoLogo from '../images/MongoDB_Logomark_ForestGreen.svg';
+import firebaseLogo from '../images/firebaseLogo.svg';
 
 const SkillsComp = () => {
 	const [skills, setSkills] = useState(true);
@@ -79,6 +82,29 @@ const SkillsComp = () => {
 								</div>
 								<div className='flex items-center justify-center text-[#68a063] w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
 									<FontAwesomeIcon icon={faNodeJs} className='w-full h-full' />
+								</div>
+							</div>
+							<div className='flex flex-row items-center justify-center'>
+								<div className='flex items-center justify-center text-[#6f42c1] w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+									<img
+										src={firebaseLogo}
+										alt='Firebase Logo'
+										className='h-full w-full'
+									/>
+								</div>
+								<div className='flex items-center justify-center text-[#61DBFB] w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+									<img
+										src={mongoLogo}
+										alt='MongoDB Logo'
+										className='h-full w-full'
+									/>
+								</div>
+								<div className='flex items-center justify-center text-[#68a063] w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+									<img
+										src={reduxLogo}
+										alt='Redux Logo'
+										className='h-full w-full'
+									/>
 								</div>
 							</div>
 						</>

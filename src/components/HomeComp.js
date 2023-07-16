@@ -1,13 +1,16 @@
 import selfPortrait from '../images/familyPhoto.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { HashLink } from 'react-router-hash-link';
 
 const HomeComp = () => {
 	return (
 		<div
-			className='snap-start w-full h-screen flex  items-center justify-center px-6 sm:px-12 lg:px-20'
+			className='snap-start w-full h-screen flex flex-col items-center justify-center px-6 sm:px-12 lg:px-20'
 			id='home'>
-			<div>
+			<div className='flex flex-col h-5/6'>
 				<div className='flex justify-center' style={{ transform: 'none' }}>
-					<img src={selfPortrait} alt='no pic yet' className='w-1/2' />
+					<img src={selfPortrait} alt='no pic yet' className='w-2/3' />
 				</div>
 
 				<div className='flex flex-col justify-center items-center'>
@@ -19,14 +22,19 @@ const HomeComp = () => {
 						<br />
 						<span className='sm:ml-16 -mt-36'>Ogden</span>
 					</h1>
-					<h5 className='text-base md:text-xl lg:text-2xl xl:text-3xl mt-4 md:mt-09 font-ubuntu400'>
+					<h5 className='text-base md:text-xl lg:text-2xl xl:text-3xl mt-2 md:mt-09 font-ubuntu400'>
 						Full Stack Developer
 					</h5>
 				</div>
-
-				<div
-					className='w-full flex flex-col justify-center items-center mt-7'
-					style={{ opacity: 1 }}></div>
+			</div>
+			<div className='sm:hidden w-full h-1/6 flex justify-center items-end pb-2 opacity-50'>
+				<HashLink smooth to='#about'>
+					<FontAwesomeIcon
+						icon={faAngleDown}
+						size='xl'
+						className='text-black'
+					/>
+				</HashLink>
 			</div>
 		</div>
 	);

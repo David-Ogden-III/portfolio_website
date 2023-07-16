@@ -1,12 +1,20 @@
 import familyPhoto from '../images/familyPhotoPng.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { HashLink } from 'react-router-hash-link';
 
 const AboutComp = () => {
 	return (
 		<div
-			className='snap-center bg-white w-full h-screen flex items-center justify-center px-6 sm:px-12 lg:px-20'
+			className='snap-center bg-white w-full h-screen flex flex-col items-center justify-center px-6 sm:px-12 lg:px-20'
 			id='about'>
-			<section className='w-full xl:container mx-auto'>
-				<div className='lg:flex lg:space-x-10'>
+			<div className='sm:hidden w-full h-1/6 flex justify-center items-start pt-2 opacity-50'>
+				<HashLink smooth to='#home'>
+					<FontAwesomeIcon icon={faAngleUp} size='xl' className='text-black' />
+				</HashLink>
+			</div>
+			<section className='w-full xl:container mx-auto h-2/3 flex justify-center items-center'>
+				<div className='lg:flex lg:space-x-10 flex justify-center items-center'>
 					<div className='hidden lg:block w-1/2'>
 						<img
 							src={familyPhoto}
@@ -14,8 +22,8 @@ const AboutComp = () => {
 							alt='nothing yet'
 						/>
 					</div>
-					<div className='flex items-center w-full lg:w-1/2'>
-						<div className='max-w-[700px] mx-auto'>
+					<div className='flex items-center justify-center w-full lg:w-1/2'>
+						<div className='max-w-[700px] mx-auto flex items-center justify-center flex-col'>
 							<h4 className='text-base sm:text-lg text-center xl:text-xl mt-2 md:mt-4 !leading-relaxed xl:w-2/3  font-ubuntu500'>
 								About Me
 							</h4>
@@ -35,6 +43,15 @@ const AboutComp = () => {
 					</div>
 				</div>
 			</section>
+			<div className='sm:hidden w-full h-1/6 flex justify-center items-end pb-2 opacity-50'>
+				<HashLink smooth to='#skills'>
+					<FontAwesomeIcon
+						icon={faAngleDown}
+						size='xl'
+						className='text-black'
+					/>
+				</HashLink>
+			</div>
 		</div>
 	);
 };

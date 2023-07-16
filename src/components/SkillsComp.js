@@ -9,6 +9,8 @@ import {
 	faJs,
 	faNodeJs,
 } from '@fortawesome/free-brands-svg-icons';
+import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { HashLink } from 'react-router-hash-link';
 import reduxLogo from '../images/redux-logo-svgrepo-com.svg';
 import mongoLogo from '../images/MongoDB_Logomark_ForestGreen.svg';
 import firebaseLogo from '../images/firebaseLogo.svg';
@@ -19,8 +21,13 @@ const SkillsComp = () => {
 	return (
 		<div
 			id='skills'
-			className='snap-center w-full h-screen flex items-center justify-center px-6 sm:px-12 lg:px-20'>
-			<div className='flex flex-col justify-center items-center'>
+			className='snap-center w-full h-screen flex flex-col items-center justify-center px-6 sm:px-12 lg:px-20'>
+			<div className='sm:hidden w-full h-1/6 flex justify-center items-start pt-2 opacity-50'>
+				<HashLink smooth to='#about'>
+					<FontAwesomeIcon icon={faAngleUp} size='xl' className='text-black' />
+				</HashLink>
+			</div>
+			<div className='h-2/3 flex justify-center items-center flex-col'>
 				<div>
 					<h4 className='text-base sm:text-lg text-center xl:text-xl mt-2 md:mt-4 !leading-relaxed xl:w-2/3 font-ubuntu500'>
 						Skills
@@ -123,6 +130,15 @@ const SkillsComp = () => {
 						</>
 					)}
 				</div>
+			</div>
+			<div className='sm:hidden w-full h-1/6 flex justify-center items-end pb-2 opacity-50'>
+				<HashLink smooth to='#projects'>
+					<FontAwesomeIcon
+						icon={faAngleDown}
+						size='xl'
+						className='text-black'
+					/>
+				</HashLink>
 			</div>
 		</div>
 	);

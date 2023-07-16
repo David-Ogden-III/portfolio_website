@@ -29,9 +29,9 @@ const SkillsComp = () => {
 			</div>
 			<div className='h-2/3 flex justify-center items-center flex-col'>
 				<div>
-					<h4 className='text-base sm:text-lg text-center xl:text-xl mt-2 md:mt-4 !leading-relaxed xl:w-2/3 font-ubuntu500'>
+					<h2 className='text-base sm:text-xl text-center xl:text-2xl mt-2 md:mt-4 !leading-relaxed xl:w-2/3 font-ubuntu500'>
 						Skills
-					</h4>
+					</h2>
 				</div>
 				<div className='font-ubuntu400'>
 					{skills ? (

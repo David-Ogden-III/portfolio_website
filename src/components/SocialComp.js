@@ -1,6 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp, faAnglesUp } from '@fortawesome/free-solid-svg-icons';
 import { HashLink } from 'react-router-hash-link';
+import {
+	faGithub,
+	faLinkedin,
+	faSquareGithub,
+} from '@fortawesome/free-brands-svg-icons';
 
 const SocialComp = () => {
 	return (
@@ -16,8 +21,45 @@ const SocialComp = () => {
 				</HashLink>
 			</div>
 			<div className='flex flex-col justify-center items-center w-full h-2/3'>
-				<h4>Social</h4>
-				<h2>**Coming Soon**</h2>
+				<h2 className='text-base sm:text-xl text-center xl:text-2xl mt-2 md:mt-4 !leading-relaxed xl:w-2/3 font-ubuntu500'>
+					Social
+				</h2>
+				<div className='flex flex-col w-full justify-center items-center'>
+					<h3 className='text-base sm:text-lg text-center xl:text-xl !leading-relaxed xl:w-2/3 font-ubuntu400'>
+						Check me out on:
+					</h3>
+					<div className='flex flex-row justify-center items-center'>
+						<div className='flex items-center justify-center w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+							<a
+								href='https://www.linkedin.com/in/david-o-5a601224a/'
+								target='_blank'>
+								<FontAwesomeIcon
+									icon={faLinkedin}
+									className='w-full h-full text-[#0a66c2] hover:scale-105'
+								/>
+							</a>
+						</div>
+						<div className='flex items-center justify-center w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+							<a href='https://github.com/David-Ogden-III' target='_blank'>
+								<FontAwesomeIcon
+									icon={faGithub}
+									className='w-full h-full text-black hover:scale-105'
+								/>
+							</a>
+						</div>
+					</div>
+					<div className='flex flex-col justify-center items-center'>
+						<h4 className='text-base sm:text-md text-center xl:text-lg !leading-relaxed xl:w-2/3 font-ubuntu400'>
+							Or
+						</h4>
+						<h3 className='text-base sm:text-lg text-center xl:text-xl !leading-relaxed xl:w-2/3 font-ubuntu400'>
+							Email me at:
+						</h3>
+						<a href='mailto:davidogden.dev@gmail.com'>
+							DavidOgden.Dev@gmail.com
+						</a>
+					</div>
+				</div>
 			</div>
 			<div className='sm:hidden w-full h-1/6 flex flex-col justify-end items-center pb-2 opacity-50'>
 				<HashLink

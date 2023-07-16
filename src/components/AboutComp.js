@@ -24,9 +24,9 @@ const AboutComp = () => {
 					</div>
 					<div className='flex items-center justify-center w-full lg:w-1/2'>
 						<div className='max-w-[700px] mx-auto flex items-center justify-center flex-col'>
-							<h4 className='text-base sm:text-lg text-center xl:text-xl mt-2 md:mt-4 !leading-relaxed xl:w-2/3  font-ubuntu500'>
+							<h2 className='text-base sm:text-xl text-center xl:text-2xl mt-2 md:mt-4 !leading-relaxed xl:w-2/3 font-ubuntu500'>
 								About Me
-							</h4>
+							</h2>
 							<p className='text-sm sm:text-base text-justify xl:text-lg mt-2 md:mt-4 !leading-relaxed xl:w-2/3 font-ubuntu400'>
 								I am a passionate and skilled Software Developer specializing in
 								**Mobile and Web development** with a strong dedication to

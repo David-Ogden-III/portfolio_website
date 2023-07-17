@@ -1,4 +1,3 @@
-import selfPortrait from '../images/familyPhoto.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { HashLink } from 'react-router-hash-link';
@@ -8,11 +7,7 @@ const HomeComp = () => {
 		<div
 			className='snap-start w-full h-screen flex flex-col items-center justify-center px-6 sm:px-12 lg:px-20'
 			id='home'>
-			<div className='flex flex-col h-5/6'>
-				<div className='flex justify-center' style={{ transform: 'none' }}>
-					<img src={selfPortrait} alt='no pic yet' className='w-2/3' />
-				</div>
-
+			<div className='flex flex-col h-5/6 items-center justify-end sm:justify-center'>
 				<div className='flex flex-col justify-center items-center'>
 					<h6 className='text-base sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-ubuntu400'>
 						Hello, I'm

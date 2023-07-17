@@ -18,7 +18,7 @@ const SocialComp = () => {
 			</div>
 			<div className='flex flex-col justify-center items-center w-full h-2/3'>
 				<h2 className='text-base sm:text-xl text-center xl:text-2xl mt-2 md:mt-4 !leading-relaxed xl:w-2/3 font-ubuntu500'>
-					Check me out on
+					Check me out on:
 				</h2>
 				<div className='flex flex-col w-full justify-center items-center'>
 					<div className='flex flex-row w-full justify-center items-center'>

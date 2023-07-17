@@ -1,7 +1,7 @@
-import familyPhoto from '../images/familyPhotoPng.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp, faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { HashLink } from 'react-router-hash-link';
+import selfPortrait from '../images/mediumSelfPhoto.png';
 
 const AboutComp = () => {
 	return (
@@ -15,14 +15,10 @@ const AboutComp = () => {
 			</div>
 			<section className='w-full xl:container mx-auto h-2/3 flex justify-center items-center'>
 				<div className='lg:flex lg:space-x-10 flex justify-center items-center'>
-					<div className='hidden lg:block w-1/2'>
-						<img
-							src={familyPhoto}
-							className='w-[65%] mx-auto'
-							alt='nothing yet'
-						/>
+					<div className='hidden sm:block w-1/2'>
+						<img src={selfPortrait} className='mx-auto' alt='nothing yet' />
 					</div>
-					<div className='flex items-center justify-center w-full lg:w-1/2'>
+					<div className='flex items-center justify-center w-full sm:w-1/2'>
 						<div className='max-w-[700px] mx-auto flex items-center justify-center flex-col'>
 							<h2 className='text-base sm:text-xl text-center xl:text-2xl mt-2 md:mt-4 !leading-relaxed xl:w-2/3 font-ubuntu500'>
 								About Me

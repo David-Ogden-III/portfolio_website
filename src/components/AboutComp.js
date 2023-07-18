@@ -15,25 +15,30 @@ const AboutComp = () => {
 			</div>
 			<section className='w-full xl:container mx-auto h-2/3 flex justify-center items-center'>
 				<div className='lg:flex lg:space-x-10 flex justify-center items-center'>
-					<div className='hidden sm:block w-1/2'>
+					<div className='hidden md:block w-1/2'>
 						<img src={selfPortrait} className='mx-auto' alt='nothing yet' />
 					</div>
-					<div className='flex items-center justify-center w-full sm:w-1/2'>
+					<div className='flex items-center justify-center w-full md:w-1/2'>
 						<div className='max-w-[700px] mx-auto flex items-center justify-center flex-col'>
 							<h2 className='text-base sm:text-xl text-center xl:text-2xl mt-2 md:mt-4 !leading-relaxed xl:w-2/3 font-ubuntu500'>
 								About Me
 							</h2>
-							<p className='text-sm sm:text-base text-justify xl:text-lg mt-2 md:mt-4 !leading-relaxed xl:w-2/3 font-ubuntu400'>
-								I am a passionate and skilled Software Developer specializing in
-								**Mobile and Web development** with a strong dedication to
-								quality and **attention to detail**. I am constantly seeking new
-								challenges and opportunities to improve my craft. I stay updated
-								with the latest industry trends and best practices by
-								**attending conferences**, **taking online courses**, and
-								**experimenting with new technologies**. I build **functional,
-								beautiful and user-friendly designs**. My commitment to
-								innovation ensures that clients receive cutting-edge and
-								effective solutions.
+							<p className='text-xs sm:text-base text-justify xl:text-lg mt-2 md:mt-4 !leading-relaxed xl:w-2/3 font-ubuntu400'>
+								I'm a Marine Corps veteran turned Front-End Developer with a
+								background as a satellite communication technician. This
+								experience has equipped me with the ability to solve complex
+								problems and think logically when developing or debugging my
+								projects. I bring together technical skills and creativity to
+								craft a combination of form and function, resulting in
+								easy-to-use and visually appealing products. As a Front-End
+								Developer, I am constantly seeking opportunities to grow and
+								stay updated with the latest industry trends. Collaborating with
+								like-minded professionals and taking on exciting projects is
+								what fuels my passion for web development. I thrive in a team
+								environment where ideas are shared, resulting in innovative
+								solutions. If you're seeking a dedicated and detail-oriented
+								Front-End Developer, I would love to showcase the skills and
+								expertise I can contribute to your team.
 							</p>
 						</div>
 					</div>

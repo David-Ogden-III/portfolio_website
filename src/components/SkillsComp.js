@@ -11,6 +11,7 @@ import {
 	faAngleDown,
 	faUsers,
 	faArrowRightArrowLeft,
+	faPersonDigging,
 } from '@fortawesome/free-solid-svg-icons';
 import { HashLink } from 'react-router-hash-link';
 import reduxLogo from '../images/redux-logo-svgrepo-com.svg';
@@ -178,7 +179,15 @@ const SkillsComp = () => {
 										Time Management
 									</p>
 								</div>
-								<div className='flex flex-col items-center justify-center w-18 h-16 sm:w-22 md:w-24 lg:w-27 xl:w-30 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'></div>
+								<div className='flex flex-col items-center justify-center w-18 h-16 sm:w-22 md:w-24 lg:w-27 xl:w-30 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+									<FontAwesomeIcon
+										icon={faPersonDigging}
+										className='w-full h-5/6'
+									/>
+									<p className='text-xs sm:text-sm text-center xl:text-md w-full h-1/6 font-ubuntu400 m-0'>
+										Action Oriented
+									</p>
+								</div>
 							</div>
 							<div className='flex flex-row items-center justify-center'>
 								<div className='flex flex-col items-center justify-center w-18 h-16 sm:w-22 md:w-24 lg:w-27 xl:w-30 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'></div>

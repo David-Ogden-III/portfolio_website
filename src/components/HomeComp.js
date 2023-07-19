@@ -18,7 +18,7 @@ const HomeComp = () => {
 						<span className='sm:ml-16 -mt-36'>Ogden</span>
 					</h1>
 					<h5 className='text-base md:text-xl lg:text-2xl xl:text-3xl mt-2 md:mt-09 font-ubuntu400'>
-						Front-End Developer222
+						Front-End Developer
 					</h5>
 				</div>
 			</div>

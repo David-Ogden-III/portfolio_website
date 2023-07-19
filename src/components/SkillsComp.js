@@ -15,11 +15,11 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { HashLink } from 'react-router-hash-link';
 import reduxLogo from '../images/redux-logo-svgrepo-com.svg';
-import mongoLogo from '../images/MongoDB_Logomark_ForestGreen.svg';
 import firebaseLogo from '../images/firebaseLogo.svg';
 import jsLogo from '../images/javascript-1.svg';
 import html5Logo from '../images/html-1.svg';
 import css3Logo from '../images/css-3.svg';
+import tailwindLogo from '../images/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg';
 import {
 	faLightbulb,
 	faComments,
@@ -117,15 +117,15 @@ const SkillsComp = () => {
 							<div className='flex flex-row items-center justify-center'>
 								<div className='flex items-center justify-center text-[#6f42c1] w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
 									<img
-										src={firebaseLogo}
-										alt='Firebase Logo'
+										src={tailwindLogo}
+										alt='TailwindCss Logo'
 										className='h-full w-full'
 									/>
 								</div>
 								<div className='flex items-center justify-center text-[#61DBFB] w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
 									<img
-										src={mongoLogo}
-										alt='MongoDB Logo'
+										src={firebaseLogo}
+										alt='Firebase Logo'
 										className='h-full w-full'
 									/>
 								</div>
@@ -141,58 +141,68 @@ const SkillsComp = () => {
 					) : (
 						<>
 							<div className='flex flex-row items-center justify-center'>
-								<div className='flex flex-col items-center justify-end w-18 h-16 sm:w-22 md:w-24 lg:w-27 xl:w-30 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
-									<FontAwesomeIcon icon={faUsers} className='w-full h-5/6' />
-									<p className='text-xs sm:text-sm text-center xl:text-md w-full h-1/6 font-ubuntu400 m-0'>
-										Team Oriented
+								<div className='flex flex-col items-center justify-center w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+									<FontAwesomeIcon icon={faUsers} className='w-full h-3/4' />
+									<p className='text-xs sm:text-sm text-center xl:text-md w-full font-ubuntu300 m-0'>
+										Team
+										<br />
+										Oriented
 									</p>
 								</div>
-								<div className='flex flex-col items-center justify-center w-18 h-16 sm:w-22 md:w-24 lg:w-27 xl:w-30 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+								<div className='flex flex-col items-center justify-center w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
 									<FontAwesomeIcon
 										icon={faArrowRightArrowLeft}
-										className='w-full h-5/6'
+										className='w-full h-3/4'
 									/>
-									<p className='text-xs sm:text-sm text-center xl:text-md w-full h-1/6 font-ubuntu400 m-0'>
+									<p className='text-xs sm:text-sm text-center xl:text-md w-full font-ubuntu300 m-0'>
+										<br />
 										Adaptability
 									</p>
 								</div>
-								<div className='flex flex-col items-center justify-center w-18 h-16 sm:w-22 md:w-24 lg:w-27 xl:w-30 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
-									<FontAwesomeIcon icon={faComments} className='w-full h-5/6' />
-									<p className='text-xs sm:text-sm text-center xl:text-md w-full h-1/6 font-ubuntu400 m-0'>
+								<div className='flex flex-col items-center justify-center w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+									<FontAwesomeIcon icon={faComments} className='w-full h-3/4' />
+									<p className='text-xs sm:text-sm text-center xl:text-md w-full font-ubuntu300 m-0'>
+										<br />
 										Communication
 									</p>
 								</div>
 							</div>
 							<div className='flex flex-row items-center justify-center'>
-								<div className='flex flex-col items-center justify-center w-18 h-16 sm:w-22 md:w-24 lg:w-27 xl:w-30 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+								<div className='flex flex-col items-center justify-start w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
 									<FontAwesomeIcon
 										icon={faLightbulb}
-										className='w-full h-5/6'
+										className='w-full h-3/4'
 									/>
-									<p className='text-xs sm:text-sm text-center xl:text-md w-full h-1/6 font-ubuntu400 m-0'>
-										Problem Solving
+									<p className='text-xs sm:text-sm text-center xl:text-md w-full font-ubuntu300 m-0'>
+										Problem
+										<br />
+										Solving
 									</p>
 								</div>
-								<div className='flex flex-col items-center justify-center w-18 h-16 sm:w-22 md:w-24 lg:w-27 xl:w-30 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
-									<FontAwesomeIcon icon={faClock} className='w-full h-5/6' />
-									<p className='text-xs sm:text-sm text-center xl:text-md w-full h-1/6 font-ubuntu400 m-0'>
-										Time Management
+								<div className='flex flex-col items-center justify-start w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+									<FontAwesomeIcon icon={faClock} className='w-full h-3/4' />
+									<p className='text-xs sm:text-sm text-center xl:text-md w-full font-ubuntu300 m-0'>
+										Time
+										<br />
+										Management
 									</p>
 								</div>
-								<div className='flex flex-col items-center justify-center w-18 h-16 sm:w-22 md:w-24 lg:w-27 xl:w-30 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
+								<div className='flex flex-col items-center justify-start w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'>
 									<FontAwesomeIcon
 										icon={faPersonDigging}
-										className='w-full h-5/6'
+										className='w-full h-3/4'
 									/>
-									<p className='text-xs sm:text-sm text-center xl:text-md w-full h-1/6 font-ubuntu400 m-0'>
-										Action Oriented
+									<p className='text-xs sm:text-sm text-center xl:text-md w-full font-ubuntu300 m-0'>
+										Action
+										<br />
+										Oriented
 									</p>
 								</div>
 							</div>
 							<div className='flex flex-row items-center justify-center'>
-								<div className='flex flex-col items-center justify-center w-18 h-16 sm:w-22 md:w-24 lg:w-27 xl:w-30 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'></div>
-								<div className='flex flex-col items-center justify-center w-18 h-16 sm:w-22 md:w-24 lg:w-27 xl:w-30 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'></div>
-								<div className='flex flex-col items-center justify-center w-18 h-16 sm:w-22 md:w-24 lg:w-27 xl:w-30 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'></div>
+								<div className='flex flex-col items-center justify-center w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'></div>
+								<div className='flex flex-col items-center justify-center w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'></div>
+								<div className='flex flex-col items-center justify-center w-16 h-16 sm:w-20 md:w-22 lg:w-25 xl:w-28 sm:h-20 md:h-22 lg:h-25 xl:h-28 m-3'></div>
 							</div>
 						</>
 					)}

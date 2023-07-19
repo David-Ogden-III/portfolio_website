@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 const HomeComp = () => {
 	return (
 		<div
-			className='snap-start w-full h-full flex flex-col items-center justify-center px-6 sm:px-12 lg:px-20'
+			className='snap-start w-full h-screen flex flex-col items-center justify-center px-6 sm:px-12 lg:px-20'
 			id='home'>
 			<div className='flex flex-col h-5/6 items-center justify-center sm:justify-center'>
 				<div className='flex flex-col justify-center items-center'>

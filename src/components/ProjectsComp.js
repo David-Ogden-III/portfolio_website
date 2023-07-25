@@ -46,7 +46,7 @@ const ProjectsComp = () => {
 								</h3>
 							</a>
 						</div>
-						<div className='flex justify-center items-center w-1/2 mx-3 h-full w-full lg:w-1/2'>
+						<div className='flex flex-col justify-center items-center w-1/2 mx-3 h-full w-full lg:w-1/2'>
 							<p className='text-xs sm:text-base text-justify xl:text-lg mt-2 md:mt-4 w-full font-ubuntu400'>
 								Easily log and monitor your workouts to track progress over
 								time. No more relying on memory, our user-friendly interface
@@ -57,6 +57,13 @@ const ProjectsComp = () => {
 								<span className='font-ubuntu500'>Reactstrap</span> and{' '}
 								<span className='font-ubuntu500'>Formik</span>.
 							</p>
+							<a
+								href='https://github.com/David-Ogden-III/portfolio_website'
+								target='_blank'
+								rel='noreferrer'
+								className='text-xs text-center sm:text-base text-justify xl:text-lg mt-2 md:mt-4 w-full font-ubuntu400 text-black decoration-black'>
+								View code on GitHub
+							</a>
 						</div>
 					</div>
 					{/* <div className='flex flex-col lg:flex-row justify-center items-center w-full lg:w-3/4 py-2'>

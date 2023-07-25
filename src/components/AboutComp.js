@@ -15,15 +15,15 @@ const AboutComp = () => {
 			</div>
 			<section className='w-full xl:container mx-auto h-2/3 flex justify-center items-center'>
 				<div className='lg:flex lg:space-x-10 flex justify-center items-center'>
-					<div className='hidden md:block w-1/2'>
+					<div className='hidden lg:block w-2/5'>
 						<img src={selfPortrait} className='mx-auto' alt='nothing yet' />
 					</div>
-					<div className='flex items-center justify-center w-full md:w-1/2'>
+					<div className='flex items-center justify-center w-full lg:w-3/5'>
 						<div className='max-w-[700px] mx-auto flex items-center justify-center flex-col'>
-							<h2 className='text-base sm:text-xl text-center xl:text-2xl mt-2 md:mt-4 !leading-relaxed xl:w-2/3 font-ubuntu500'>
+							<h2 className='text-base sm:text-xl text-center xl:text-2xl mt-2 md:mt-4 xl:w-2/3 font-ubuntu500'>
 								About Me
 							</h2>
-							<p className='text-xs sm:text-base text-justify xl:text-lg mt-2 md:mt-4 !leading-relaxed xl:w-2/3 font-ubuntu400'>
+							<p className='text-xs sm:text-base text-justify xl:text-lg mt-2 md:mt-4 xl:w-2/3 font-ubuntu400'>
 								I'm a Marine Corps veteran turned Front-End Developer with a
 								background as a satellite communication technician. This
 								experience has equipped me with the ability to solve complex
